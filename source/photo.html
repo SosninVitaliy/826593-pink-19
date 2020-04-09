@@ -30,13 +30,14 @@
       </nav>
     </header>
     <main class="page-main">
-      <h1 class="visually-hidden">Фотографии "Pink"</h1>
+      <h1 class="visually-hidden">Фотографии пользователей приложения "Pink"</h1>
       <section class="preview-photo">
         <h2 class="preview-photo__header">
           Фотографии пользователей
         </h2>
       </section>
       <section class="customers">
+        <h2 class="visually-hidden">Список постов пользователей</h2>
         <div class="customers__block-title">
           <p class="customers__title">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
         </div>
@@ -113,6 +114,43 @@
           </li>
         </ul>
       </section>
+      <section class="upload-photo">
+        <h2 class="visually-hidden">Запостить фотографию</h2>
+        <div class="upload-photo__title">
+          <p class="upload-photo__text">
+            Затмите их всех! Выкладывайте все, что накопилось в телефоне!
+          </p>
+        </div>
+        <form class="upload-photo__form" action="https://echo.htmlacademy.ru/courses" method="post">
+          <div class="upload-photo__image">
+            <img class="upload-photo__img" src="https://via.placeholder.com/150x150" alt="Фотография пользователя">
+          </div>
+          <div class="upload-photo__block-editor">
+            <span class="upload-photo__icon upload-photo__icon--size">
+              <svg>
+
+              </svg>
+            </span>
+            <span class="upload-photo__icon upload-photo__icon--fill">
+              <svg>
+
+              </svg>
+            </span>
+            <span class="upload-photo__icon upload-photo__icon--contrast">
+              <svg>
+
+              </svg>
+            </span>
+            <div class="upload-photo__range">
+              <div class="upload-photo__scroll"></div>
+            </div>
+          </div>
+          <div class="upload-photo__block-button">
+            <input type="submit" value="Запостить">
+            <input type="reset" value="Отмена">
+          </div>
+        </form>
+      </section>
     </main>
     <footer class="page-footer">
       <div class="page-footer__logo">
@@ -120,13 +158,34 @@
       </div>
       <ul class="page-footer__social">
         <li class="page-footer__social-item">
-          <a class="page-footer__link page-footer__link--twitter" href="#">Twitter</a>
+          <a class="page-footer__link page-footer__link--twitter" href="#">
+            <span class="visually-hidden">
+              Twitter
+            </span>
+            <svg>
+
+            </svg>
+          </a>
         </li>
         <li class="page-footer__social-item">
-          <a class="page-footer__link page-footer__link--facebook" href="#">Facebook</a>
+          <a class="page-footer__link page-footer__link--facebook" href="#">
+            <span class="visually-hidden">
+              Facebook
+            </span>
+            <svg>
+
+            </svg>
+          </a>
         </li>
         <li class="page-footer__social-item">
-          <a class="page-footer__link page-footer__link--youtube" href="#">YouTube</a>
+          <a class="page-footer__link page-footer__link--youtube" href="#">
+            <span class="visually-hidden">
+              YouTube
+            </span>
+            <svg>
+
+            </svg>
+          </a>
         </li>
       </ul>
       <div class="page-footer__copyright">
