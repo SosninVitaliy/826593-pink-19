@@ -7,7 +7,7 @@
   <body>
     <header class="page-header">
       <a class="page-header__logo" href="#">
-        <img class="page-header__logo-image" src="https://via.placeholder.com/150x150" alt="Мобильное приложение 'Pink'">
+        <img class="page-header__logo-image" src="https://via.placeholder.com" width="150" height="150" alt="Мобильное приложение 'Pink'">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
@@ -35,19 +35,20 @@
         <h2 class="preview-index__header">
           Взгляните на жизнь иначе!
         </h2>
-        <img class="preview-index__header-img" src="https://via.placeholder.com/150x150" alt="mobile">
+        <img class="preview-index__header-img" src="https://via.placeholder.com" width="150" height="150" alt="mobile">
       </section>
       <section class="application">
+        <h2 class="visually-hidden">Скачать наше приложение</h2>
         <div class="application__block">
-          <a class="application__item-click button" href="#">Скачать приложение</a>
+          <a class="application__block-button button" href="#">Скачать приложение</a>
           <ul class="application__list">
-            <li class="application__item">
+            <li class="application__list-item">
               <a class="application__icon application__icon--apple" href="#">apple</a>
             </li>
-            <li class="application__item">
+            <li class="application__list-item">
               <a class="application__icon application__icon--android" href="#">android</a>
             </li>
-            <li class="application__item">
+            <li class="application__list-item">
               <a class="application__icon application__icon--microsoft" href="#">microsoft</a>
             </li>
           </ul>
@@ -56,22 +57,23 @@
       </section>
       <section class="intro">
         <div class="intro__block">
-          <p class="intro__question">Устали от серости мегаполиса?</p>
-          <p class="intro__exclamation">Нам есть, что вам предложить!</p>
+          <h2 class="intro__question">Устали от серости мегаполиса?</h2>
+          <h2 class="intro__exclamation">Нам есть, что вам предложить!</h2>
         </div>
       </section>
       <section class="advantage">
+        <h2 class="visually-hidden">Наши преимущества</h2>
         <div class="advantage__block">
           <ul class="advantage__list">
-            <li class="advantage__item">
-              <h3 class="advantage__item-title">
+            <li class="advantage__list-item">
+              <h3 class="advantage__title">
                 Поднимает настроение
               </h3>
-              <p class="advantage__item-text">
+              <p class="advantage__text">
                 Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
               </p>
             </li>
-            <li class="advantage__item">
+            <li class="advantage__list-item">
               <h3 class="advantage__title">
                 Меняет мир вокруг
               </h3>
@@ -79,7 +81,7 @@
                 Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
               </p>
             </li>
-            <li class="advantage__item">
+            <li class="advantage__list-item">
               <h3 class="advantage__title">
                 Заводит новых друзей
               </h3>
@@ -88,9 +90,209 @@
               </p>
             </li>
           </ul>
-          <img class="advantage__block-img" src="https://via.placeholder.com/150x150" alt="Всем привет">
+          <img class="advantage__block-img" src="https://via.placeholder.com" width="150" height="150" alt="Всем привет">
         </div>
       </section>
+      <section class="feedback">
+        <h2 class="visually-hidden">Отзывы о нас</h2>
+        <ul class="feedback__list">
+          <li class="feedback__item">
+            <h3 class="feedback__item-title">
+              Николай Петров
+            </h3>
+            <p class="feedback__item-text">
+              «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+            </p>
+          </li>
+          <li class="feedback__item">
+            <h3 class="feedback__item-title">
+              Николай Петров
+            </h3>
+            <p class="feedback__item-text">
+              «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+            </p>
+          </li>
+          <li class="feedback__item">
+            <h3 class="feedback__item-title">
+              Николай Петров
+            </h3>
+            <p class="feedback__item-text">
+              «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+            </p>
+          </li>
+        </ul>
+        <div class="slider slider--feedback">
+          <input class="visually-hidden" type="radio" name="slider-feedback" id="slider-feedback-1" checked>
+          <label class="slider-item slider-item--feedback" for="slider-feedback-1">
+            <span class="visually-hidden">Первый слайд</span>
+          </label>
+          <input class="visually-hidden" type="radio" name="slider-feedback" id="slider-feedback-2">
+          <label class="slider-item slider-item--feedback" for="slider-feedback-3">
+            <span class="visually-hidden">Второй слайд</span>
+          </label>
+          <input class="visually-hidden" type="radio" name="slider-feedback" id="slider-feedback-3">
+          <label class="slider-item slider-item--feedback" for="slider-feedback-3">
+            <span class="visually-hidden">Третий слайд</span>
+          </label>
+        </div>
+      </section>
+      <article class="rates-table">
+        <header class="rates-table__header">
+          <ul class="rates-table__list">
+            <li class="rates-table__item">
+              <h3 class="rates-table__title">
+                База
+              </h3>
+              <span class="rates-table__sub">
+                1,99 USD
+              </span>
+            </li>
+            <li class="rates-table__item">
+              <span class="rates-table__icon-hit">Хит</span>
+              <h3 class="rates-table__title">
+                Стандарт
+              </h3>
+              <span class="rates-table__sub">
+                3,99 USD
+              </span>
+            </li>
+            <li class="rates-table__item">
+              <h3 class="rates-table__title">
+                Анлим
+              </h3>
+              <span class="rates-table__sub">
+                9,99 USD
+              </span>
+            </li>
+          </ul>
+        </header>
+        <div class="rates-table__content">
+          <ul class="rates-table__list">
+            <li class="rates-table__item">
+              <p class="rates-table__text">
+                Розовый фильтр
+              </p>
+              <span class="rates-table__icon rates-table__icon--included">
+
+              </span>
+            </li>
+            <li class="rates-table__item">
+              <p class="rates-table__text">
+                Розовый фильтр
+              </p>
+              <span class="rates-table__icon rates-table__icon--included">
+
+              </span>
+            </li>
+            <li class="rates-table__item">
+              <p class="rates-table__text">
+                Розовый фильтр
+              </p>
+              <span class="rates-table__icon rates-table__icon--included">
+
+              </span>
+            </li>
+          </ul>
+        </div>
+        <div class="rates-table__content">
+          <ul class="rates-table__list">
+            <li class="rates-table__item">
+              <p class="rates-table__text">
+                Смайлики
+              </p>
+              <span class="rates-table__icon rates-table__icon--not-included">
+
+              </span>
+            </li>
+            <li class="rates-table__item">
+              <p class="rates-table__text">
+                Смайлики
+              </p>
+              <span class="rates-table__icon rates-table__icon--included">
+
+              </span>
+            </li>
+            <li class="rates-table__item">
+              <p class="rates-table__text">
+                Смайлики
+              </p>
+              <span class="rates-table__icon rates-table__icon--included">
+
+              </span>
+            </li>
+          </ul>
+        </div>
+        <div class="rates-table__content">
+          <ul class="rates-table__list">
+            <li class="rates-table__item">
+              <p class="rates-table__text">
+                Комментарии
+              </p>
+              <span class="rates-table__icon rates-table__icon--not-included">
+
+              </span>
+            </li>
+            <li class="rates-table__item">
+              <p class="rates-table__text">
+                Комментарии
+              </p>
+              <span class="rates-table__icon rates-table__icon--not-included">
+
+              </span>
+            </li>
+            <li class="rates-table__item">
+              <p class="rates-table__text">
+                Комментарии
+              </p>
+              <span class="rates-table__icon rates-table__icon--included">
+
+              </span>
+            </li>
+          </ul>
+        </div>
+        <div class="slider slider--rates-table">
+            <input class="visually-hidden" type="radio" name="slider-rates" id="slider-rates-table-1" checked>
+            <label class="slider-item slider-item--rates-table" for="slider-rates-table-1">
+              <span class="visually-hidden">Первый слайд</span>
+            </label>
+            <input class="visually-hidden" type="radio" name="slider-rates" id="slider-rates-table-2">
+            <label class="slider-item slider-item--rates-table" for="slider-rates-table-2">
+              <span class="visually-hidden">Второй слайд</span>
+            </label>
+            <input class="visually-hidden" type="radio" name="slider-rates" id="slider-rates-table-3">
+            <label class="slider-item slider-item--rates-table" for="slider-rates-table-3">
+              <span class="visually-hidden">Третий слайд</span>
+            </label>
+          </div>
+      </article>
     </main>
+    <footer class="index-footer">
+      <div class="index-footer__block-address">
+        <h2 class="index-footer__title">
+          Остались вопросы? Свяжитесь с нами!
+        </h2>
+        <h3 class="index-footer__text">
+          Звоните:
+        </h3>
+        <p class="index-footer__information">
+          +7 (812) 555-66-66
+        </p>
+        <h3 class="index-footer__text">
+          Пишите:
+        </h3>
+        <p class="index-footer__information">
+          mail@htmlacademy.ru
+        </p>
+        <h3 class="index-footer__text">
+          Приезжайте в гости:
+        </h3>
+        <p class="index-footer__information">
+          ул. Большая Конюшенная, 19/8
+        </p>
+        <div class="index-footer__map">
+          <img src="https://via.placeholder.com" width="150" height="150" alt="Наше местоположение на карте: Большая Конюшенная улица, дом 19/8">
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

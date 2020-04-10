@@ -7,7 +7,7 @@
   <body>
     <header class="page-header">
       <a class="page-header__logo" href="#">
-        <img class="page-header__logo-image" src="https://via.placeholder.com/150x150" alt="Мобильное приложение 'Pink'">
+        <img class="page-header__logo-image" src="https://via.placeholder.com" width="150" height="150" alt="Мобильное приложение 'Pink'">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
@@ -30,26 +30,161 @@
       </nav>
     </header>
     <main class="page-main">
-      <h1 class="visually-hidden">Фотографии "Pink"</h1>
+      <h1 class="visually-hidden">Форма заполнения приложения "Pink"</h1>
       <section class="preview">
         <h2 class="preview__header">
           Конкурс на самое безбашенное путешествие с Пинк
         </h2>
       </section>
+      <section class="form">
+        <h2 class="visually-hidden">Форма контактных данных</h2>
+        <form class="form-submission" action="https://echo.htmlacademy.ru/courses" method="post">
+          <fieldset class="form-submission__block-name">
+            <p class="form-submission__block-title">
+              Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните
+            </p>
+            <label class="form-submission__label" for="family">
+              Фамилия:
+            </label>
+            <input class="form-submission__input" type="text" id="family" name="family" pattern="[A-Za-zА-Яа-яЁё]" placeholder="Укажите фамилию *">
+            <label class="form-submission__label" for="family">
+              Имя:
+            </label>
+            <input class="form-submission__input" type="text" id="name" name="name" pattern="[A-Za-zА-Яа-яЁё]" placeholder="Введите ваше имя *">
+            <label class="form-submission__label" for="name">
+              Отчество:
+            </label>
+            <input class="form-submission__input" type="text" id="middle-name" name="middle-name" pattern="[A-Za-zА-Яа-яЁё]" placeholder="Ну и отчество тоже *">
+          </fieldset>
+          <fieldset class="form-submission__block-checkbox">
+            <legend class="form-submission__title">
+              Ваши безбашенные достижения в путешествии
+            </legend>
+            <ul class="form-submission__list form-submission__list--checkbox">
+              <li class="form-submission__item form-submission__item--checkbox">
+                <input class="visually-hidden" type="checkbox" id="selfie" name="selfie" checked>
+                <label class="form-submission__text" for="selfie">
+                  Сделал селфи с акулой
+                </label>
+              </li>
+              <li class="form-submission__item form-submission__item--checkbox">
+                <input class="visually-hidden" type="checkbox" id="beach" name="beach" checked>
+                <label class="form-submission__text" for="beach">
+                  Обгорел на пляже
+                </label>
+              </li>
+              <li class="form-submission__item form-submission__item--checkbox">
+                <input class="visually-hidden" type="checkbox" id="see" name="see">
+                <label class="form-submission__text" for="see">
+                  Видел Чака Норриса
+                </label>
+              </li>
+              <li class="form-submission__item form-submission__item--checkbox">
+                <input class="visually-hidden" type="checkbox" id="buy" name="buy">
+                <label class="form-submission__text" for="buy">
+                  Накупил сувениров
+                </label>
+              </li>
+              <li class="form-submission__item form-submission__item--checkbox">
+                <input class="visually-hidden" type="checkbox" id="tower" name="tower" checked>
+                <label class="form-submission__text" for="tower">
+                  Удержал башню
+                </label>
+              </li>
+              <li class="form-submission__item form-submission__item--checkbox">
+                <input class="visually-hidden" type="checkbox" id="hotel" name="hotel">
+                <label class="form-submission__text" for="hotel">
+                  Разгромил отель
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="form-submission__block-contacts">
+            <label class="form-submission__label" for="tel">
+              Номер телефона
+            </label>
+            <input class="form-submission__input" type="tel" id="tel" name="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" placeholder="Номер, пожалуйста">
+            <label class="form-submission__label" for="email">
+              адрес почты
+            </label>
+            <input class="form-submission__input" type="email" id="email" name="email" placeholder="Введите почту *">
+          </fieldset>
+          <fieldset class="form-submission__block-radio">
+            <legend class="form-submission__title">
+              С каким приложением путешествовали?
+            </legend>
+            <ul class="form-submission__list form-submission__list--radio">
+              <li class="form-submission__item form-submission__item--radio">
+                <input class="visually-hidden" type="radio" id="ios" name="ios">
+                <label class="form-submission__text" for="ios">
+                  Pink для iOS
+                </label>
+              </li>
+              <li class="form-submission__item form-submission__item--radio">
+                <input class="visually-hidden" type="radio" id="android" name="android">
+                <label class="form-submission__text" for="android">
+                  Pink на Android
+                </label>
+              </li>
+              <li class="form-submission__item form-submission__item--radio">
+                <input class="visually-hidden" type="radio" id="windows" name="windows">
+                <label class="form-submission__text" for="windows">
+                  Windows Phone
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="form-submission__block-text">
+            <legend class="form-submission__title">
+              Опишите свои эмоции
+            </legend>
+            <textarea name="text" id="text" cols="10" rows="10">
+              Можно прям в красках, не стесняясь в выражениях
+            </textarea>
+          </fieldset>
+          <div class="form-submission__buttons">
+            <input class="form-submission__submit" type="submit" value="Отправить форму">
+          </div>
+          <p class="form-submission__item-text">
+            * — обязательные поля
+          </p>
+        </form>
+      </section>
     </main>
     <footer class="page-footer">
       <div class="page-footer__logo">
-        <img class="page-footer__logo-img" src="https://via.placeholder.com/150x150" alt="Лого 'Pink'">
+        <img class="page-footer__logo-img" src="https://via.placeholder.com" width="150" height="150" alt="Лого 'Pink'">
       </div>
       <ul class="page-footer__social">
         <li class="page-footer__social-item">
-          <a class="page-footer__link page-footer__link--twitter" href="#">Twitter</a>
+          <a class="page-footer__link page-footer__link--twitter" href="#">
+            <span class="visually-hidden">
+              Twitter
+            </span>
+            <svg>
+
+            </svg>
+          </a>
         </li>
         <li class="page-footer__social-item">
-          <a class="page-footer__link page-footer__link--facebook" href="#">Facebook</a>
+          <a class="page-footer__link page-footer__link--facebook" href="#">
+            <span class="visually-hidden">
+              Facebook
+            </span>
+            <svg>
+
+            </svg>
+          </a>
         </li>
         <li class="page-footer__social-item">
-          <a class="page-footer__link page-footer__link--youtube" href="#">YouTube</a>
+          <a class="page-footer__link page-footer__link--youtube" href="#">
+            <span class="visually-hidden">
+              YouTube
+            </span>
+            <svg>
+
+            </svg>
+          </a>
         </li>
       </ul>
       <div class="page-footer__copyright">
